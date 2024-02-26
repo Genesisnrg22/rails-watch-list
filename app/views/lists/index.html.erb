@@ -1,0 +1,13 @@
+<!-- app/views/list/index.html.erb -->
+<ul>
+  <% @lists.each do |list| %>
+    <li style="list-style:none">
+      <%= link_to list.name, list_path(list)%>
+      <%= link_to "Delete",
+      list_path(list),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      %>
+    </li>
+  <% end %>
+  <%= link_to "Add a new list", new_list_path%>
+</ul>

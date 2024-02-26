@@ -1,7 +1,8 @@
-<h1>WELCOME TO MY MOVIES!</h1>
-<%= simple_form_for(@bookmark) do |f| %>
+<h1>Comment your favorite movie!</h1>
+<%= simple_form_for [@list, @bookmark] do |f| %>
   <%= f.input :comment %>
-  <%= f.input :movie_id %>
-  <%= f.input :list_id %>
-  <%= f.submit %>
+  <%= f.association :movie %>
+  <%= f.button :submit %>
 <% end %>
+
+<%= link_to "< back to lists" , lists_path%>
