@@ -1,7 +1,6 @@
 .banner {
   background-size: cover ;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg);
   height: 300px;
   h1 {
     margin: 0;
@@ -17,6 +16,11 @@
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 }
-.container {
 
+.b-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg);
+}
+
+.b-show {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0,0,0,0.4)), url(https://www.vitalthrills.com/wp-content/uploads/2022/07/luck-movie.jpg.webp);
 }

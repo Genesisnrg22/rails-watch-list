@@ -1,4 +1,10 @@
 <!-- app/views/list/show.html.erb -->
+<div class="banner b-show d-flex align-items-center">
+  <div class="container">
+    <h1>Movies watch-list!</h1>
+    <p>Watch the best movies here</p>
+  </div>
+</div>
 <h2><%= @list.name %></h2>
 <% @list.movies.each do |movie| %>
   <%= image_tag movie.poster_url, width: "100px" %>
@@ -10,4 +16,4 @@
   </div>
 <% end %>
 <%= link_to "< back", lists_path%>
-<%= link_to " Add review", new_list_bookmark_path(@list)%>
+| <%= link_to " Add review", new_list_bookmark_path(@list)%>
